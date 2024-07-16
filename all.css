@@ -1,0 +1,425 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #00ffa3;
+}
+
+nav a {
+  color: #d1d1d1;
+}
+
+.card li {
+  border: 1px solid #e3e3e3;
+  color: #15161d;
+  padding: 16px;
+}
+
+.card div:nth-child(odd) {
+  padding-right: 12px;
+  margin-bottom: 24px;
+}
+
+.card div:nth-child(even) {
+  padding-left: 12px;
+  margin-bottom: 24px;
+}
+
+.img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.imgShadow:hover {
+  filter: drop-shadow(0px 0px 10px rgba(144, 148, 255, 0.8980392157));
+}
+
+.arrow {
+  position: relative;
+}
+
+.arrow:after {
+  position: absolute;
+  top: 50%;
+  right: -25%;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  transform: translateY(-50%);
+}
+
+.arrow:before {
+  position: absolute;
+  top: 45%;
+  right: -20%;
+  display: block;
+  content: "";
+  width: 78px;
+  height: 8px;
+  background: white;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.col-2 {
+  width: 16.6666%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.col-3 {
+  width: 25%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.col-4 {
+  width: 33.3333%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.col-5 {
+  width: 41.6666%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.col-6 {
+  width: 50%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.col-7 {
+  width: 58.3333%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.col-8 {
+  width: 66.6666%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.mx-5 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.px-6 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.py-3 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.py-10 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.py-24 {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.py-40 {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.pt-18 {
+  padding-top: 72px;
+}
+
+.pb-8 {
+  padding-bottom: 32px;
+}
+
+.ps-3 {
+  padding-left: 12px;
+}
+
+.pe-3 {
+  padding-right: 12px;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.me-auto {
+  margin-right: auto;
+}
+
+.me-4 {
+  margin-right: 16px;
+}
+
+.me-6 {
+  margin-right: 24px;
+}
+
+.mb-1 {
+  margin-bottom: 4px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-7 {
+  margin-bottom: 28px;
+}
+
+.mb-8 {
+  margin-bottom: 32px;
+}
+
+.mb-9 {
+  margin-bottom: 36px;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-primary {
+  color: #00ffa3;
+}
+
+.text-secondary {
+  color: #15161d;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fs-5 {
+  font-size: 20px;
+}
+
+.fs-6 {
+  font-size: 24px;
+}
+
+.fs-16 {
+  font-size: 64px;
+}
+
+.fs-32 {
+  font-size: 128px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.border-radius-8 {
+  border-radius: 32px;
+}
+
+.w-50 {
+  width: 50%;
+}/*# sourceMappingURL=all.css.map */
